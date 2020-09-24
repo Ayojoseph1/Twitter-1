@@ -1,0 +1,32 @@
+//COLORS
+$color-primary: #1da1f2;
+$color-dark: #14171a;
+$color-white: #fff;
+$color-footer-link: #aab8c2;
+$color-footer-border: #e6ecf0;
+
+//background-color: #eaf5fd;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box; 
+    font-size: 62.5%; // 1rem = 10px; 
+}
+
+
+p,a,h1,h2,h3,li,span{
+    font-family: 'Open Sans' sans-serif;
+}

@@ -1,0 +1,131 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh 10vh;
+    
+
+    //leftbox
+
+    &__left-box{
+        color: #fff;
+        background-color: $color-primary;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr min-content;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 2rem;
+        padding: 12rem 13rem;
+
+        &--path{
+            font-size: 1.4rem;
+           line-height: 2rem;
+           grid-column: 2 / 3; 
+
+        }
+
+        &--list{
+            display: grid;
+            grid-template-columns: min-content 1fr;
+        }
+
+        &--icon{
+            font-size: 4rem;
+            margin-right: 1rem;
+            grid-row: 1 / -1;
+            height: 3.2rem;
+            transform: translateY(1rem);
+            fill: #fff;
+        }
+    }
+    //rightbox
+    &__right-box{
+        background-color: $color-white;
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10rem;
+
+
+      &--card{
+          min-width: 30rem;
+          padding: 0 6rem;
+        }  
+
+      &--head{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &--heading{
+            font-size: 2.7rem;
+            line-height: 3.2rem;
+            color: $color-dark;
+       
+    }
+    &--paragraph{
+         
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-dark;
+        margin: 4rem 0;
+
+    }
+    &--logo-icon{
+        font-size: 3em;
+        color: $color-primary;
+    }
+
+    }
+    &__bottom-box{
+        grid-column: 1 / -1;
+        border-top: 1px solid $color-footer-border;
+
+        &--anchor{
+            text-align: center;
+
+            &__list{
+                display: inline-block;
+                margin: 0 .5rem;
+            }
+            &__list:hover{
+                text-decoration: underline;
+            }
+            &__tag{
+                font-size: 1.2rem;
+                color: $color-footer-link;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*
+&__left-box{
+        background-color: $color-primary;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        &--list{
+            list-style-type: none;
+            font-size: 1.8rem;
+            line-height: 2.4;
+            margin: 5rem 0;
+            font-weight: bold;
+            color: $color-white;
+        }
+
+        &--icon{
+            font-size: 2.4rem;
+            margin-right: 1rem;
+        }
+    }*/
